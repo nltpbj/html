@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, td{
+        border:1px solid blue;
+        width:50%;
+        border-collapse: collapse;
+        background-color: gray;
+    }
+    td{
+        height:40px;
+        width:35%;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <td colspan="2"style="text-align:center">NAME</td><!-- <td colspan="x": x개수 만큼 열을 합체, 합체된 열만큼 tr내부 td지우기/ style="text-align:center" : 쓴내용 중앙으로 이동 -->
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br/><br/>
+    
+    <table>
+        <tr>
+            <td rowspan="3" style="text-align:center">APRIL</td>  <!--rowspan="x": x값만큼 행을 병합,colspan처럼 없어지는 행만큼 td지우기 -->
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br/><br/>
+   
+    <table>
+        <tr>
+            <td colspan="3" style="text-align: center;">2024</td>
+        </tr>
+        <tr>
+            <td></td>   
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2" style="text-align: center;">FIESTA</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br/><br/>
+    
+</body>
+</html>

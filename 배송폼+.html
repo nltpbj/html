@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <ul>
+            <li>
+                <!-- label 태그의 for속성에서 사용하는건 id와 맞아야한다  -->
+                <label for="user-name">이름</label>
+                <input type="text" name="user-name" id="user-name"  autofocus required
+                placeholder="이름을 입력하시오">                <!-- 사용자에게 불필요한 정보일때 <input type-"hidden" 태그를 사용함  -->
+                                                             <!-- autofocus는 접속시 입력쪽으로 이동 required 태그를 넣으면 반드시 입력해야함   -->
+            </li>     
+            <li>
+                <label for="adress">배송주소</label>
+                <input type="adress" name="adress" id="adress" required>
+            </li>                                                      
+            <li>
+                <label for="email">이메일</label>
+                <input type="email" name="email" id="email" required>
+            </li>
+            <li>
+                <label for="phone">전화번호</label>
+                <input type="tel" name="phone" id="phone">
+            </li>
+            <li>
+                <input type="file" name="upload">
+                <!--    파일전송은 form태그의 method가 반드시 post여야 한다 그리고 enctype="multipart/form-data"이 속성이 있어야만 한다    -->
+            </li>
+            <li>
+                요구사항:<br/>
+                <textarea name="request" rows="5" cols="30"></textarea> <!-- rows :가로 너비  cols: 세로 너비 <textrarea><textarea/> 사이에 공백을 넣을시 입력할시 공백칸 만큼 뛰어써짐-->
+            </li>
+            <li>
+                원하는 연봉:
+                <select name="salary">          <!-- option태그는 드랍다운 메뉴를 만들어줌  -->
+                    <option value="">--선택하세요--</option>
+                    <option value="1">3000이하</option>
+                    <option value="2">3000이상~3500이하</option>
+                    <option value="3">3500이상~4000이하</option>
+                    <option value="4">4000이상</option>
+                </select>
+            </li>
+            <li>
+                원하는 연봉2:<br/>
+                <input type="text" id="salary1" list="salary">
+                <datalist id="salary">          
+                    <option value="1">3000이하</option>
+                    <option value="2">3000이상~3500이하</option>
+                    <option value="3">3500이상~4000이하</option>
+                    <option value="4">4000이상</option>
+                </select>
+            </li>
+            <li>
+                <input type="submit" value="전송">
+                <input type="reset" value="재설정">
+                <input type="button" value="button">
+                <button>버튼</button>
+                <button type="button">버튼</button>         <!-- <button>은 submit으로 사용되고 <button type="xx"> 해야지 버튼으로 사용   -->
+            </li>
+        </ul>
+
+    </form>
+    
+</body>
+</html>
